@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Menu creator</title>
+</head>
+<body>
+    <div class="title card-header">
+    <h1>Comrade, create your menu for your mates!</h1>
+    <p class="submenu">How it works : put meals, a price on it and submit your menu</p>
+    </div>
+    <form id="frm">
+        <div class="espace form-row align-items-center">
+            <div class="col-auto">
+                <label for="starterid"> Starter </label>
+                <input type="text" name="starter" id="starterid">
+            </div>
+            <div class="col-auto">
+                <label for="starter-priceid"> Price </label>
+                <input type="text" name="starter-price" id="starter-priceid">
+            </div>
+        </div>
+        <div class="espace form-row align-items-center">
+            <div class="col-auto">
+                <label for="mainid"> Main </label>
+                <input type="text" name="main" id="mainid">
+            </div>
+            <div class="col-auto"></div>
+                <label for="main-priceid"> Price </label>
+                <input type="text" name="main-price" id="main-priceid">
+            </div>
+        </div>
+        <div class="espace form-row align-items-center">
+            <div class="col-auto">
+                <label for="dessertid"> Dessert </label>
+                <input type="text" name="dessert" id="dessertid">
+            </div>
+            <div class="col-auto">
+                <label for="dessert-priceid"> Price </label>
+                <input type="text" name="dessert-price" id="dessert-priceid">
+            </div>
+        </div>
+        <div class="espacebut">
+            <input type="button" onclick="getMenu()" value="Create your menu" class="but btn btn-outline-success">
+            <input type="button" onclick="resetMenu()" value="Reset your menu" class="but btn btn-outline-warning">
+        </div>
+    </form>
+
+    <div class="grid">
+        <div class="listMenu card-header">
+            <h3>Your menu</h3>
+            <ul id="listMenu"></ul>
+        </div>
+        
+        <div class="listPrice card-header">
+            <h3>Your price (€)</h3>
+            <ul id="listPrice"></ul>
+        </div>
+    </div>
+
+    <div class="totalPrice card-header">
+        <h3>Total price of the menu (€)</h3>
+        <h5 id="totalPrice"></h5>
+    </div>
+    
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

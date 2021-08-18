@@ -1,0 +1,51 @@
+body{
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+}
+ul{
+  list-style-type: circle;
+}
+
+.title{
+    color:rgb(12, 44, 112);
+    background-color: rgb(13, 161, 230);
+    font-family: 'Oswald', sans-serif;
+}
+.submenu{
+    color: rgb(224, 224, 231);
+    margin-left: 15px;
+}
+.espace{
+    margin-top: 20px;
+    margin-left: 35%;
+    font-family: 'Oswald', sans-serif;
+}
+.espacebut{
+    margin-top: 20px;
+    margin-left: 40%;
+    font-family: 'Oswald', sans-serif;
+}
+.but{
+    margin-left: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.listMenu{
+    margin-top: 50px;
+    background-color: rgb(245, 175, 175);
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.listPrice{
+    margin-top: 50px;
+    background-color: rgb(191, 192, 189);
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.totalPrice{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+}
